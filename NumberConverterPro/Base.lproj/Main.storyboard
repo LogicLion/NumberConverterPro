@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--Number Converter View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="LLNumberConverterViewController" customModule="NumberConverterPro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdj-Te-gbO">
+                                <rect key="frame" x="185" y="77" width="68" height="23"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Binary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcg-zh-s7m">
+                                <rect key="frame" x="185" y="195" width="50" height="23"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decimal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXE-Gy-RlY">
+                                <rect key="frame" x="185" y="322" width="65" height="23"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hex" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa1-f5-H2p">
+                                <rect key="frame" x="185" y="451" width="34" height="23"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="numberField" translatesAutoresizingMaskIntoConstraints="NO" id="UPB-7F-KwE">
+                                <rect key="frame" x="185" y="103" width="230" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="qZ6-n4-vbJ"/>
+                                    <constraint firstAttribute="height" constant="40" id="sYW-k4-tUF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="resultField" translatesAutoresizingMaskIntoConstraints="NO" id="eTI-sz-sMK">
+                                <rect key="frame" x="185" y="345" width="230" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="zoA-nN-sp3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="resultField" translatesAutoresizingMaskIntoConstraints="NO" id="2ob-RO-bo9">
+                                <rect key="frame" x="185" y="474" width="230" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="4Gd-Bh-nfy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdD-NJ-FcO">
+                                <rect key="frame" x="432" y="112" width="20" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="63Q-Fi-eJI"/>
+                                    <constraint firstAttribute="width" constant="20" id="WNA-Kd-P8x"/>
+                                </constraints>
+                                <state key="normal" image="delete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="resultField" translatesAutoresizingMaskIntoConstraints="NO" id="QmO-zJ-dBU">
+                                <rect key="frame" x="185" y="221" width="230" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="GT9-Z5-dUG"/>
+                                    <constraint firstAttribute="height" constant="40" id="cIO-8E-MOR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sdj-Te-gbO" firstAttribute="centerX" secondItem="UPB-7F-KwE" secondAttribute="centerX" constant="-81" id="51x-JJ-LOq"/>
+                            <constraint firstItem="2ob-RO-bo9" firstAttribute="centerX" secondItem="Wa1-f5-H2p" secondAttribute="centerX" constant="98" id="7JH-5n-Eo7"/>
+                            <constraint firstItem="Lcg-zh-s7m" firstAttribute="centerX" secondItem="QmO-zJ-dBU" secondAttribute="centerX" constant="-90" id="8hO-ab-esd"/>
+                            <constraint firstAttribute="centerY" secondItem="UPB-7F-KwE" secondAttribute="centerY" constant="177" id="EpG-nN-A8n"/>
+                            <constraint firstAttribute="centerY" secondItem="QmO-zJ-dBU" secondAttribute="centerY" constant="59" id="FGF-Sh-Koo"/>
+                            <constraint firstAttribute="centerX" secondItem="2ob-RO-bo9" secondAttribute="centerX" id="Fmm-ef-rT5"/>
+                            <constraint firstItem="QmO-zJ-dBU" firstAttribute="height" secondItem="eTI-sz-sMK" secondAttribute="height" id="Fy1-XZ-rz9"/>
+                            <constraint firstAttribute="centerX" secondItem="UPB-7F-KwE" secondAttribute="centerX" id="Gme-Yl-spS"/>
+                            <constraint firstItem="QXE-Gy-RlY" firstAttribute="centerX" secondItem="eTI-sz-sMK" secondAttribute="centerX" constant="-82.5" id="Ivx-OY-PHZ"/>
+                            <constraint firstItem="2ob-RO-bo9" firstAttribute="top" secondItem="Wa1-f5-H2p" secondAttribute="bottom" id="Spn-0d-S3h"/>
+                            <constraint firstItem="QmO-zJ-dBU" firstAttribute="height" secondItem="2ob-RO-bo9" secondAttribute="height" id="Z0L-2i-ufC"/>
+                            <constraint firstItem="QmO-zJ-dBU" firstAttribute="height" secondItem="UPB-7F-KwE" secondAttribute="height" id="dlh-2f-4CF"/>
+                            <constraint firstAttribute="centerY" secondItem="vdD-NJ-FcO" secondAttribute="centerY" constant="177" id="igp-3A-EmA"/>
+                            <constraint firstItem="QmO-zJ-dBU" firstAttribute="top" secondItem="Lcg-zh-s7m" secondAttribute="bottom" constant="3" id="j0q-mD-Wmp"/>
+                            <constraint firstAttribute="centerX" secondItem="eTI-sz-sMK" secondAttribute="centerX" id="k5v-D1-SlN"/>
+                            <constraint firstAttribute="centerX" secondItem="vdD-NJ-FcO" secondAttribute="centerX" constant="-142" id="l4c-md-TJo"/>
+                            <constraint firstAttribute="centerY" secondItem="eTI-sz-sMK" secondAttribute="centerY" constant="-65" id="nzd-ft-kMQ"/>
+                            <constraint firstAttribute="centerY" secondItem="2ob-RO-bo9" secondAttribute="centerY" constant="-194" id="pc0-4r-TKp"/>
+                            <constraint firstAttribute="centerX" secondItem="QmO-zJ-dBU" secondAttribute="centerX" id="vbv-c9-08d"/>
+                            <constraint firstItem="eTI-sz-sMK" firstAttribute="top" secondItem="QXE-Gy-RlY" secondAttribute="bottom" id="wWd-hc-QDz"/>
+                            <constraint firstItem="UPB-7F-KwE" firstAttribute="top" secondItem="Sdj-Te-gbO" secondAttribute="bottom" constant="3" id="zsD-SG-C9b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="binaryNumberField" destination="QmO-zJ-dBU" id="aPg-R7-6op"/>
+                        <outlet property="clearButton" destination="vdD-NJ-FcO" id="drt-km-pBu"/>
+                        <outlet property="decimalNumberField" destination="eTI-sz-sMK" id="IKe-nf-fZg"/>
+                        <outlet property="hexNumberField" destination="2ob-RO-bo9" id="U55-yW-nUw"/>
+                        <outlet property="inputField" destination="UPB-7F-KwE" id="h2Y-R5-PZj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="delete" width="40" height="44"/>
+        <image name="numberField" width="239" height="41"/>
+        <image name="resultField" width="239" height="41"/>
+    </resources>
+</document>
